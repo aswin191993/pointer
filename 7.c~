@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+struct data
+{
+	char name[5][10],hname[12];
+	int age;
+};
+struct data my;
+int main()
+{
+	strcpy(my.name[0],"aswin");
+	strcpy(my.name[1],"asasdf");
+	strcpy(my.hname,"aritharath");
+	my.age=22;
+	printf("Name:%s\n%s\naddress:%s\nage:%d\n",my.name[0],my.name[2],my.hname,my.age);
+	
+}

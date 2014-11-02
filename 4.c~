@@ -1,0 +1,30 @@
+#include<stdio.h>
+char copy(char strng[]);
+#define max 100
+main()
+{
+	char strng[max];
+	char new[100];
+	char *bptr;
+	bptr=new;	
+	printf("input string:");
+	scanf("%s",strng);
+	printf("%c",copy(strng));
+	printf("%s\n",new);
+}
+char copy(char strng[])
+{
+	char *aptr;
+	
+	aptr=strng;
+	
+	while(*aptr!='\0')
+	{
+		*bptr++ = *aptr++;
+		//*bptr='\0';
+		//printf("%s\n",new);
+	}
+	*bptr='\0';
+	
+}
+	
